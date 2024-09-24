@@ -20,7 +20,8 @@
 
 ## Update
 ```bash
-> 1) Menghilangkan fitur user menghapus storynya
+> 1 ) Menghilangkan fitur user menghapus storynya > Rilis 24-09-2024
+> 2 ) Menambahkan fitur auto uptime di bio wa otomatis bisa di atur di file config.js > Rilis 24-09-2024
 ```
 ## Run On Termux
 ```bash
