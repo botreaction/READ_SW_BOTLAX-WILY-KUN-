@@ -4,6 +4,6 @@ const config = {
   autoread: true, // Ubah Ini untuk read sw == true, untuk tidak maka == false
   faston: 1000, // Semakin dikit nilai nya, maka semakin cepat read SW
   pairingNumber: "6289688206739", // nomer pairing 
-  uptimeBio: false // Add this line
+  uptimeBio: false // false mati true hidup
 }
 export default config;
