@@ -25,18 +25,11 @@
   },
   "homepage": "https://github.com/botreaction/READ_SW_BOTLAX-WILY-KUN/bot-read-sw#readme",
   "dependencies": {
-    "@adiwajshing/keyed-db": "latest",
-    "baileys": "npm:@whiskeysockets/baileys@latest",
-    "cfonts": "latest",
+    "baileys": "latest",
+    "@hapi/boom": "latest",
     "chalk": "latest",
-    "@hapi/boom": "^9.1.0",
-    "pino": "^8.12.2"
-    "express": "latest",
-    "http": "latest",
+    "cfonts": "latest",
     "node-cache": "latest",
-    "path": "latest",
-    "qrcode-terminal": "latest",
-    "socket.io": "latest",
-    "url": "latest"
+    "pino": "latest"
   }
 }
