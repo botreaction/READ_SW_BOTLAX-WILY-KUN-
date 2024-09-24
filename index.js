@@ -75,7 +75,7 @@ const start = async () => {
     const msgRetryCounterCache = new NodeCache()
     const config = {
       browser: ['Linux', 'Chrome', ''],
-            version: [2, 2413, 51],
+            version: [2, 4000, 1015901307],
             pairingCode: true, 
             markOnlineOnConnect: false,
       logger: log,
