@@ -18,6 +18,10 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bolaxd/bot-read-sw)
 
+## Update
+```bash
+> 1) Menghilangkan fitur user menghapus storynya
+
 ## Run On Termux
 ```bash
 > git clone https://github.com/bolaxd/bot-read-sw
