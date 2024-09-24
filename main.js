@@ -24,6 +24,20 @@ cfonts.say('auto-read-sw\nby-wily-kun', {// Ubah saja cuii ;v
   transitionGradient: false,
   env: 'node'
 });
+
+let startTime = new Date(); // Store the start time
+
+function formatUptime(startTime) {
+    const now = new Date();
+    const uptimeMs = now.getTime() - startTime.getTime();
+    const seconds = Math.floor(uptimeMs / 1000);
+    const minutes = Math.floor(seconds / 60);
+    const hours = Math.floor(minutes / 60);
+    const days = Math.floor(hours / 24);
+    const formattedUptime = `${days}d ${hours % 24}h ${minutes % 60}m`;
+    return formattedUptime;
+}
+
 const j = async (u, c, q) => {
   const { lastDisconnect, connection } = u
    try {
@@ -31,7 +45,7 @@ const j = async (u, c, q) => {
         if (new Boom(lastDisconnect.error ).output?.statusCode === DisconnectReason.loggedOut) q() 
         else q()
       } else if (connection == 'open') {
-      console.log("Tersambung ke Koneksi whatsapp...");
+        console.log("Tersambung ke Koneksi whatsapp...");
       }
    } catch (e) {
     console.log('')
@@ -103,7 +117,13 @@ const start = async () => {
 }, 3000)
 }
     store.bind(client.ev)
-    client.ev.on('connection.update', async (up) => j(up, client, start));
+    client.ev.on('connection.update', async (up) => {
+        j(up, client, start);
+        if (up.connection === 'open' && cuy.uptimeBio) {
+            const formattedUptime = formatUptime(startTime);
+            await client.updateProfileStatus(`Online - Uptime: ${formattedUptime}`);
+        }
+    });
     client.ev.on('messages.upsert', async (up) => h(up, client));
     client.ev.on('creds.update', saveCreds);
   } catch (e) {
