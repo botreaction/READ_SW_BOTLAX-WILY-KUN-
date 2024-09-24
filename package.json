@@ -29,6 +29,8 @@
     "baileys": "npm:@whiskeysockets/baileys@latest",
     "cfonts": "latest",
     "chalk": "latest",
+    "@hapi/boom": "^9.1.0",
+    "pino": "^8.12.2"
     "express": "latest",
     "http": "latest",
     "node-cache": "latest",
