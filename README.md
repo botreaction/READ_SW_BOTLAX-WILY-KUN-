@@ -21,7 +21,7 @@
 ## Update
 ```bash
 > 1) Menghilangkan fitur user menghapus storynya
-
+```
 ## Run On Termux
 ```bash
 > git clone https://github.com/bolaxd/bot-read-sw
