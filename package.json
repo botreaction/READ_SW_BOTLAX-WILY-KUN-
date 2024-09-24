@@ -21,9 +21,9 @@
   "author": "komeoe",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bolaxd/bot-read-sw/issues"
+    "url": "https://github.com/botreaction/READ_SW_BOTLAX-WILY-KUN/issues"
   },
-  "homepage": "https://github.com/bolaxd/bot-read-sw#readme",
+  "homepage": "https://github.com/botreaction/READ_SW_BOTLAX-WILY-KUN/bot-read-sw#readme",
   "dependencies": {
     "@adiwajshing/keyed-db": "latest",
     "baileys": "npm:@whiskeysockets/baileys@latest",
